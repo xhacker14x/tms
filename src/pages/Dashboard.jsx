@@ -112,6 +112,7 @@ const Dashboard = () => {
                 className="w-full px-2 py-1 border rounded-[5px] cursor-pointer border-slate-300 hover:outline-none active:outline-none"
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
+                required
               >
                 {taskStatus.map((status) => {
                   return (
@@ -137,6 +138,7 @@ const Dashboard = () => {
                       onChange={(e) => setPriority(e.target.value)}
                       checked={priority === item.value}
                       className="mr-1"
+                      required
                     />
                     {item.label}
                   </label>
@@ -152,6 +154,7 @@ const Dashboard = () => {
               onChange={(e) => setDescription(e.target.value)}
               rows={4}
               cols={40}
+              required
             />
           </div>
           <div className="flex items-center justify-end gap-2">
