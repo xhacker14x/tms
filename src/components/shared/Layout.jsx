@@ -16,7 +16,7 @@ const Layout = () => {
       </div>
 
       <div
-        className={`self-start flex-1 h-screen duration-300 ease-in-out xl:ml-[15%] ${
+        className={`self-start flex-1 h-screen duration-300 ease-in-out ${
           visible ? "ml-0 lg:ml-[20%] xl:ml-[15%]" : "xl:ml-0"
         }`}
       >
