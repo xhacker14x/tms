@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap&family=Paytone+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Variables*/
+@layer base {
+  :root {
+    --color-accent: #06b6d4;
+    --color-accent-hover: #0891b2;
+  }
+}
+
+/*Global*/
+body,
+html,
+h1,
+h2,
+p,
+a,
+span,
+label,
+div {
+  font-family: "Roboto", sans-serif;
+  color: #393939;
+}
+nav a.active {
+  color: #fff;
+  background-color: #525252;
+}
